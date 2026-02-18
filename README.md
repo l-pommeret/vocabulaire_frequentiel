@@ -55,6 +55,3 @@ Le processus peut prendre quelques minutes en fonction de la puissance de votre 
 *   `frequency_report.md` : Le rapport détaillé (Markdown).
 *   `perseus_frequency.csv` : La liste de fréquence de tout le corpus (utile pour créer des flashcards).
 *   `table_visualization.html` & `frequency_table_simple.png` : Visualisation des données.
-
----
-*Projet réalisé assisté par Antigravity.*
