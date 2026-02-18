@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse de Fréquence Grec Ancien</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #222;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2.2em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+            color: #333;
+        }
+
+        thead {
+            border-bottom: 2px solid #333;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.5px;
+            color: #333;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        .rank {
+            color: #999;
+            text-align: center;
+            width: 40px;
+            font-weight: normal;
+        }
+
+        .work {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #222;
+        }
+
+        .author {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 0.85em;
+            color: #666;
+            margin-left: 5px;
+        }
+
+        .number {
+            font-family: 'Roboto', sans-serif;
+            font-variant-numeric: tabular-nums;
+            font-weight: 500;
+            color: #222;
+        }
+
+        .secondary-number {
+            color: #777;
+            font-variant-numeric: tabular-nums;
+            font-size: 0.9em;
+        }
+
+        .note {
+            font-size: 0.85em;
+            font-style: italic;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Vocabulaire Grec Ancien</h1>
+        <div class="subtitle">Nombre de lemmes uniques nécessaires pour comprendre 98% du texte</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="rank">#</th>
+                    <th>Œuvre</th>
+                    <th>Lemmes (98%)</th>
+                    <th>Mots Totaux</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rank">1</td>
+                    <td class="work">Lysias 24</td>
+                    <td class="number">474</td>
+                    <td class="secondary-number">1,750</td>
+                    <td class="note">Discours court</td>
+                </tr>
+                <tr>
+                    <td class="rank">2</td>
+                    <td class="work">Lysias 1</td>
+                    <td class="number">672</td>
+                    <td class="secondary-number">2,868</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">3</td>
+                    <td class="work">Lysias 12</td>
+                    <td class="number">1,176</td>
+                    <td class="secondary-number">5,933</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">4</td>
+                    <td class="work">Panégyrique <span class="author">(Isocrate)</span></td>
+                    <td class="number">2,014</td>
+                    <td class="secondary-number">12,013</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">5</td>
+                    <td class="work">Antigone <span class="author">(Sophocle)</span></td>
+                    <td class="number">2,098</td>
+                    <td class="secondary-number">8,985</td>
+                    <td class="note">Poésie dense</td>
+                </tr>
+                <tr>
+                    <td class="rank">6</td>
+                    <td class="work">Nouveau Testament</td>
+                    <td class="number">3,058</td>
+                    <td class="secondary-number">135,356</td>
+                    <td class="note">Très accessible et long</td>
+                </tr>
+                <tr>
+                    <td class="rank">7</td>
+                    <td class="work">Sur la Couronne <span class="author">(Démosthène)</span></td>
+                    <td class="number">3,592</td>
+                    <td class="secondary-number">25,716</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">8</td>
+                    <td class="work">Anabase <span class="author">(Xénophon)</span></td>
+                    <td class="number">6,062</td>
+                    <td class="secondary-number">64,807</td>
+                    <td class="note">Référence classique</td>
+                </tr>
+                <tr>
+                    <td class="rank">9</td>
+                    <td class="work">Iliade <span class="author">(Homère)</span></td>
+                    <td class="number">7,237</td>
+                    <td class="secondary-number">127,460</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">10</td>
+                    <td class="work">République <span class="author">(Platon)</span></td>
+                    <td class="number">7,473</td>
+                    <td class="secondary-number">104,845</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">11</td>
+                    <td class="work">Odyssée <span class="author">(Homère)</span></td>
+                    <td class="number">8,041</td>
+                    <td class="secondary-number">102,378</td>
+                    <td class="note"></td>
+                </tr>
+                <tr>
+                    <td class="rank">12</td>
+                    <td class="work">Guerre du Péloponnèse <span class="author">(Thucydide)</span></td>
+                    <td class="number">11,802</td>
+                    <td class="secondary-number">167,371</td>
+                    <td class="note">Complexe</td>
+                </tr>
+                <tr>
+                    <td class="rank">13</td>
+                    <td class="work">Histoires <span class="author">(Hérodote)</span></td>
+                    <td class="number">14,302</td>
+                    <td class="secondary-number">207,824</td>
+                    <td class="note">Vocabulaire très riche</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
