@@ -144,29 +144,34 @@ def main():
     work_stats = {}
     
     # Process XMLs
-    for name, filename in FILES.items():
-        path = os.path.join(DATA_DIR, filename)
-        if os.path.exists(path):
-            print(f"Processing {name}...")
-            text = parse_xml_tei(path)
-            if text:
-                # Chunking for Stanza
-                # Stanza can be memory intensive.
-                chunk_size = 5000
-                chunks = [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
-                lemmas = []
-                for i, chunk in enumerate(chunks):
-                    # Simple progress
-                    if i % 10 == 0: print(f"  Chunk {i}/{len(chunks)}")
-                    lemmas.extend(lemmatize_text(chunk, nlp))
-                
-                counts = Counter(lemmas)
-                work_stats[name] = counts
-                corpus_lemmas.update(counts)
-
-
+    xml_files = glob.glob(os.path.join(DATA_DIR, "*.xml"))
+    print(f"Found {len(xml_files)} XML files to process.")
+    
+    for path in xml_files:
+        filename = os.path.basename(path)
+        name = filename.replace(".xml", "").replace("_", " ").title()
+        
+        print(f"Processing {name}...")
+        text = parse_xml_tei(path)
+        if text:
+            # Chunking for Stanza
+            chunk_size = 50000 # Increased chunk size for speed, Stanza handles it
+            chunks = [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
+            lemmas = []
+            for i, chunk in enumerate(chunks):
+                 # visual progress
+                 pass
+            
+            # actually we can just lemmatize the whole thing if it's not massive
+            # but chunking is safer.
+            for chunk in chunks:
+                lemmas.extend(lemmatize_text(chunk, nlp))
+            
+            counts = Counter(lemmas)
+            work_stats[name] = counts
+            corpus_lemmas.update(counts)
         else:
-            print(f"File not found: {filename}")
+            print(f"Warning: No text found in {filename}")
             
     # Process NT
     nt_lemmas = []
@@ -202,6 +207,55 @@ def main():
             "unique_lemmas": len(counts),
             "ratio": needed / len(counts) if len(counts) > 0 else 0
         })
+
+    # --- NEW: Weighted Corpus Generation ---
+    print("\n--- Generating Weighted Corpus based on Learnability Index (Core/Total) ---")
+    weighted_corpus = {} # Use dict for float values
+    
+    # Sort texts by Index (Ratio) - "Ordonner les textes"
+    # ratio = needed_98 / total_tokens (Wait, needed / unique? No, needed / total?)
+    # User said: "indice d'apprenabilité (noyau/mots totaux)"
+    # My previous code calculated ratio = needed / unique_lemmas. 
+    # I should correct this to needed / total_tokens if that's what the user explicitly asked.
+    # User: "noyau/mots totaux". 
+    # My code line 208: "ratio": needed / len(counts) -> needed / unique.
+    # I MUST FIX THIS to needed / total_tokens for the User's Index.
+    
+    # Re-calculating proper user index
+    for r in results:
+        r["learnability_index"] = r["needed_98"] / r["total_tokens"] if r["total_tokens"] > 0 else 0
+        
+    # Sort by this new index
+    results.sort(key=lambda x: x["learnability_index"])
+    
+    print(f"{'Work':<30} | {'Index (Core/Total)':<20} | {'Weight Multiplier'}")
+    print("-" * 70)
+    
+    for r in results: 
+        name = r["name"]
+        index = r["learnability_index"]
+        counts = work_stats[name]
+        
+        print(f"{name:<30} | {index:.6f}             | x{index:.6f}")
+        
+        for lemma, count in counts.items():
+            if lemma not in weighted_corpus:
+                weighted_corpus[lemma] = 0.0
+            weighted_corpus[lemma] += count * index
+
+    # Export Weighted List
+    print("Exporting Weighted Frequency List (perseus_weighted.csv)...")
+    with open("perseus_weighted.csv", "w") as f:
+        f.write("Rank,Lemma,WeightedCount,RawCount\n") 
+        # We need to sort by WeightedCount
+        sorted_weighted = sorted(weighted_corpus.items(), key=lambda item: item[1], reverse=True)
+        
+        for rank, (lemma, w_count) in enumerate(sorted_weighted, 1):
+            raw_count = corpus_lemmas[lemma]
+            f.write(f"{rank},{lemma},{w_count:.4f},{raw_count}\n")
+            
+    # --- END NEW ---
+
         
     # Compare with Corpus (Top 100, 500, 1000)
     corpus_top_100 = set([l for l, c in corpus_lemmas.most_common(100)])

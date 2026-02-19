@@ -9,9 +9,13 @@ Voici le tableau récapitulatif des lemmes nécessaires pour atteindre 98% de co
 ![Tableau de Fréquence](frequency_table_simple.png)
 
 **Observations principales :**
-*   **Accessibilité :** Le **Nouveau Testament** est remarquablement accessible (seulement ~3 000 mots pour comprendre 98% du texte), malgré sa longueur.
-*   **Complexité :** Les historiens comme **Hérodote** et **Thucydide** exigent un vocabulaire très étendu (plus de 11 000 mots).
-*   **Standards :** L'**Anabase** de Xénophon et la **République** de Platon sont les textes les plus proches du vocabulaire "standard" du corpus, ce qui en fait d'excellents points d'entrée pour l'apprentissage du grec classique.
+*   **La Marche du 98% :** Passer de 95% à 98% de couverture demande souvent de **doubler** le vocabulaire connu. Pour l'**Iliade**, on passe de ~24 000 à ~70 000 mots !
+*   **Accessibilité (95%) :** À 95%, le **Nouveau Testament** devient très accessible (~9 000 mots du corpus).
+*   **Progressivité :** Les orateurs comme **Lysias** et **Isée** restent les portes d'entrée idéales.
+*   **Stratégie :** Viser 95% est un objectif réaliste pour une lecture fluide avec dictionnaire, tandis que 98% exige une érudition quasi-totale.
+
+## 🎓 Guide d'Apprentissage
+Un guide détaillé pour les étudiants est disponible : [learner_guide.md](learner_guide.md). Il propose un parcours de lecture progressif basé sur ces statistiques.
 
 ## 🚀 Utilisation
 
@@ -53,5 +57,6 @@ Le processus peut prendre quelques minutes en fonction de la puissance de votre 
 
 ## 📂 Fichiers Générés
 *   `frequency_report.md` : Le rapport détaillé (Markdown).
-*   `perseus_frequency.csv` : La liste de fréquence de tout le corpus (utile pour créer des flashcards).
+*   `perseus_frequency.csv` : La liste de fréquence de tout le corpus.
+*   `perseus_frequency_top5k.csv` : Les 5 000 mots les plus fréquents (Recommandé pour débuter).
 *   `table_visualization.html` & `frequency_table_simple.png` : Visualisation des données.
