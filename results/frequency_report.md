@@ -1,7 +1,7 @@
-# Frequency Analysis Report
+# Rapport d'analyse fréquentielle
 
-## 98% Coverage Requirements
-| Work | Total Tokens | Unique Lemmas | Lemmas for 98% Coverage | % of Vocabulary |
+## Couverture à 98 %
+| Œuvre | Mots totaux | Lemmes uniques | Lemmes pour 98 % | % du vocabulaire |
 |---|---|---|---|---|
 | Lysias 05 | 120 | 57 | 55 | 96.5% |
 | Lysias 33 | 208 | 98 | 94 | 95.9% |
@@ -24,41 +24,41 @@
 | Lysias 20 | 774 | 196 | 181 | 92.3% |
 | Hyperides 02 | 423 | 190 | 182 | 95.8% |
 | Isaeus 10 | 780 | 198 | 183 | 92.4% |
-| Demosthenes 46 | 835 | 206 | 190 | 92.2% |
-| Antiphon 04 | 826 | 206 | 190 | 92.2% |
 | Lysias 16 | 516 | 200 | 190 | 95.0% |
+| Antiphon 04 | 826 | 206 | 190 | 92.2% |
+| Demosthenes 46 | 835 | 206 | 190 | 92.2% |
 | Lysias 24 | 613 | 204 | 192 | 94.1% |
 | Demosthenes 16 | 829 | 211 | 195 | 92.4% |
 | Antiphon 01 | 773 | 211 | 196 | 92.9% |
 | Lysias 18 | 592 | 207 | 196 | 94.7% |
+| Demosthenes 28 | 613 | 212 | 200 | 94.3% |
 | Lysias 10 | 638 | 212 | 200 | 94.3% |
 | Demosthenes 51 | 631 | 212 | 200 | 94.3% |
-| Demosthenes 28 | 613 | 212 | 200 | 94.3% |
 | Lysias 26 | 591 | 211 | 200 | 94.8% |
 | Demosthenes 38 | 802 | 218 | 202 | 92.7% |
 | Hyperides 01 | 582 | 215 | 204 | 94.9% |
 | Isaeus 04 | 786 | 223 | 208 | 93.3% |
-| Lysias 25 | 903 | 227 | 209 | 92.1% |
 | Isocrates 08 | 578 | 220 | 209 | 95.0% |
+| Lysias 25 | 903 | 227 | 209 | 92.1% |
 | Lysias 21 | 574 | 222 | 211 | 95.0% |
 | Demosthenes 41 | 864 | 229 | 212 | 92.6% |
-| Demosthenes 30 | 961 | 235 | 216 | 91.9% |
 | Lysias 31 | 790 | 231 | 216 | 93.5% |
+| Demosthenes 30 | 961 | 235 | 216 | 91.9% |
 | Demosthenes 52 | 938 | 237 | 219 | 92.4% |
 | Demosthenes 05 | 639 | 233 | 221 | 94.8% |
 | Andocides 02 | 824 | 241 | 225 | 93.4% |
 | Lysias 32 | 739 | 241 | 227 | 94.2% |
 | Isaeus 01 | 1,132 | 252 | 230 | 91.3% |
+| Antiphon 03 | 873 | 248 | 231 | 93.1% |
 | Isaeus 09 | 921 | 249 | 231 | 92.8% |
 | Lysias 30 | 885 | 248 | 231 | 93.1% |
-| Antiphon 03 | 873 | 248 | 231 | 93.1% |
-| Demosthenes 12 | 630 | 250 | 238 | 95.2% |
 | Demosthenes 11 | 594 | 249 | 238 | 95.6% |
+| Demosthenes 12 | 630 | 250 | 238 | 95.2% |
 | Demosthenes 55 | 862 | 256 | 239 | 93.4% |
 | Demosthenes 01 | 785 | 255 | 240 | 94.1% |
 | Demosthenes 48 | 1,374 | 268 | 241 | 89.9% |
-| Demosthenes 33 | 1,004 | 263 | 243 | 92.4% |
 | Lysias 07 | 891 | 260 | 243 | 93.5% |
+| Demosthenes 33 | 1,004 | 263 | 243 | 92.4% |
 | Demosthenes 53 | 763 | 260 | 245 | 94.2% |
 | Demosthenes 26 | 754 | 260 | 245 | 94.2% |
 | Demosthenes 32 | 743 | 262 | 248 | 94.7% |
@@ -67,8 +67,8 @@
 | Demosthenes 15 | 943 | 274 | 256 | 93.4% |
 | Lysias 14 | 1,132 | 280 | 258 | 92.1% |
 | Demosthenes 42 | 911 | 277 | 259 | 93.5% |
-| Demosthenes 07 | 1,026 | 281 | 261 | 92.9% |
 | Lysias 01 | 955 | 280 | 261 | 93.2% |
+| Demosthenes 07 | 1,026 | 281 | 261 | 92.9% |
 | Lysias 1 | 955 | 280 | 261 | 93.2% |
 | Antiphon 02 | 979 | 281 | 262 | 93.2% |
 | Lysias 03 | 969 | 283 | 264 | 93.3% |
@@ -77,16 +77,16 @@
 | Isaeus 03 | 1,617 | 309 | 277 | 89.6% |
 | Demosthenes 39 | 1,168 | 301 | 278 | 92.4% |
 | Andocides 03 | 1,261 | 305 | 280 | 91.8% |
-| Isaeus 07 | 1,165 | 307 | 284 | 92.5% |
 | Demosthenes 13 | 1,017 | 304 | 284 | 93.4% |
-| Demosthenes 14 | 1,121 | 307 | 285 | 92.8% |
+| Isaeus 07 | 1,165 | 307 | 284 | 92.5% |
 | Demosthenes 02 | 895 | 302 | 285 | 94.4% |
+| Demosthenes 14 | 1,121 | 307 | 285 | 92.8% |
 | Hyperides 06 | 937 | 304 | 286 | 94.1% |
 | Antiphon 06 | 1,463 | 317 | 288 | 90.9% |
-| Isaeus 11 | 1,439 | 318 | 290 | 91.2% |
 | Demosthenes 03 | 1,006 | 310 | 290 | 93.5% |
-| Isocrates 06 | 1,272 | 320 | 295 | 92.2% |
+| Isaeus 11 | 1,439 | 318 | 290 | 91.2% |
 | Demosthenes 56 | 1,235 | 319 | 295 | 92.5% |
+| Isocrates 06 | 1,272 | 320 | 295 | 92.2% |
 | Demosthenes 49 | 1,757 | 331 | 296 | 89.4% |
 | Isocrates 05 | 1,476 | 330 | 301 | 91.2% |
 | Hyperides 04 | 1,088 | 322 | 301 | 93.5% |
@@ -111,8 +111,8 @@
 | Isaeus 06 | 1,500 | 387 | 357 | 92.2% |
 | Demosthenes 04 | 1,425 | 388 | 360 | 92.8% |
 | Demosthenes 35 | 1,403 | 388 | 360 | 92.8% |
-| Demosthenes 08 | 1,838 | 397 | 361 | 90.9% |
 | Lysias 02 | 1,762 | 396 | 361 | 91.2% |
+| Demosthenes 08 | 1,838 | 397 | 361 | 90.9% |
 | Demosthenes 54 | 1,372 | 390 | 363 | 93.1% |
 | Demosthenes 47 | 2,243 | 417 | 373 | 89.4% |
 | Andocides 04 | 1,295 | 400 | 375 | 93.8% |
@@ -136,8 +136,8 @@
 | Isocrates 16 | 2,659 | 571 | 518 | 90.7% |
 | Demosthenes 25 | 2,829 | 650 | 594 | 91.4% |
 | Isocrates 17 | 3,465 | 686 | 617 | 89.9% |
-| Demosthenes 20 | 4,944 | 717 | 619 | 86.3% |
 | New Testament Revelation | 4,136 | 701 | 619 | 88.3% |
+| Demosthenes 20 | 4,944 | 717 | 619 | 86.3% |
 | Isocrates 20 | 3,975 | 717 | 638 | 89.0% |
 | Andocides 01 | 4,354 | 771 | 684 | 88.7% |
 | Demosthenes 59 | 4,059 | 800 | 719 | 89.9% |
@@ -164,10 +164,10 @@
 | Peloponnesian War | 67,199 | 4,616 | 3,273 | 70.9% |
 | Herodotus | 80,986 | 6,421 | 4,802 | 74.8% |
 
-## Comparison with Generated 'Perseus' (Corpus) List
-Intersection of Top N words. Determining how standard the vocabulary is.
+## Comparaison avec la liste Perseus (corpus)
+Intersection des N mots les plus fréquents pour déterminer la standardisation du vocabulaire.
 
-| Work | Top 100 Overlap | Top 500 Overlap | Top 1000 Overlap |
+| Œuvre | Top 100 | Top 500 | Top 1000 |
 |---|---|---|---|
 | Herodotus | 62 | 285 | 547 |
 | Peloponnesian War | 60 | 289 | 543 |

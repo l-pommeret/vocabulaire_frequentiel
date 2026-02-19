@@ -66,9 +66,9 @@ def calculate_rank_for_coverage(text_lemmas, corpus_freq_list, thresholds=[0.95,
     return ranks
 
 def main():
-    print("Loading Perseus Frequency List...")
+    print("Loading Weighted Perseus Frequency List...")
     corpus_freq = []
-    with open('perseus_frequency.csv', 'r', encoding='utf-8-sig') as f:
+    with open('perseus_weighted.csv', 'r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row['Lemma']:

@@ -1,62 +1,95 @@
-# Analyse de Fréquence en Grec Ancien
+# Vocabulaire fréquentiel et indice d'apprenabilité (grec ancien)
 
-Ce projet a pour objectif de déterminer le nombre de mots (lemmes) uniques nécessaires pour comprendre 98% de divers textes classiques grecs. Il compare également le vocabulaire de chaque œuvre à un "corpus de référence" (basé sur l'ensemble des textes analysés) pour évaluer la standardisation du vocabulaire.
+Ce dépôt héberge les scripts et les données permettant de générer une liste fréquentielle lemmatisée du Grec Ancien, fondée non seulement sur les occurrences brutes, mais aussi sur un **Indice d'Apprenabilité**.
 
-## 📊 Résultats Clés
+L'objectif de ce projet est de proposer une progression lexicale réaliste aux étudiants. Plutôt que de subir la surreprésentation des mots issus des œuvres les plus volumineuses (comme l'Iliade ou les Histoires d'Hérodote), notre matrice pondère le vocabulaire selon son utilité pour aborder les textes dont le "noyau lexical" est le plus restreint.
 
-Voici le tableau récapitulatif des lemmes nécessaires pour atteindre 98% de couverture.
+## Approche : le score de facilité
 
-![Tableau de Fréquence](frequency_table_simple.png)
+L'indice d'apprenabilité ($I_A$) d'une œuvre est calculé selon la taille de son noyau lexical. Le **Noyau Lexical** est défini comme le nombre de mots (lemmes) uniques qu'un lecteur doit connaître pour comprendre **98%** de l'œuvre.
 
-**Observations principales :**
-*   **La Marche du 98% :** Passer de 95% à 98% de couverture demande souvent de **doubler** le vocabulaire connu. Pour l'**Iliade**, on passe de ~24 000 à ~70 000 mots !
-*   **Accessibilité (95%) :** À 95%, le **Nouveau Testament** devient très accessible (~9 000 mots du corpus).
-*   **Progressivité :** Les orateurs comme **Lysias** et **Isée** restent les portes d'entrée idéales.
-*   **Stratégie :** Viser 95% est un objectif réaliste pour une lecture fluide avec dictionnaire, tandis que 98% exige une érudition quasi-totale.
+![Tableau de Fréquence](visuals/frequency_table_simple.png)
 
-## 🎓 Guide d'Apprentissage
-Un guide détaillé pour les étudiants est disponible : [learner_guide.md](learner_guide.md). Il propose un parcours de lecture progressif basé sur ces statistiques.
+La formule mathématique du score de facilité intégrée au modèle est :
 
-## 🚀 Utilisation
+$$I_A(T) = \frac{10000}{N_{98\%}(T)}$$
 
-Pour reproduire l'analyse, suivez ces étapes :
+Les mots sont ensuite pondérés par leur fréquence relative dans chaque texte multipliée par l'indice du texte, permettant ainsi de redonner de l'importance au vocabulaire des textes pédagogiquement accessibles (Ex: Les discours de Lysias ou le Nouveau Testament).
+
+---
+
+## Structure du dépôt
+
+L'architecture du code a été pensée pour être propre et modulaire. 
+
+```
+.
+├── scripts/                    # Scripts d'analyse principaux
+│   ├── analyze_frequency.py       # Génère la liste pondérée et les statistiques
+│   ├── calculate_perseus_ranks.py # Calcule les rangs (95% / 98%) par œuvre
+│   └── data_collection/           # Scripts de téléchargement des textes
+│       ├── download_texts.py
+│       ├── download_more.py
+│       └── ...
+├── data/                       # Textes XML (TEI) et SBLGNT bruts (générés par data_collection)
+├── results/                    # Résultats générés (fichiers CSV, rapports)
+│   ├── perseus_weighted.csv       # La liste de fréquence scientifiquement pondérée
+│   ├── perseus_frequency.csv      # La liste classique de Perseus (fréquences brutes)
+│   └── frequency_report.md        # Rapport complet des statistiques par œuvre
+└── visuals/                    # Code source des rendus graphiques (LaTeX, HTML, PNG)
+    ├── frequency_table.tex
+    ├── table_visualization.html
+    └── frequency_table_simple.png
+```
+
+---
+
+## Utilisation universelle
+
+La suite d'analyse peut être exécutée sur n'importe quel ordinateur disposant de Python 3.
 
 ### 1. Installation des dépendances
-Le projet utilise Python 3.
-Veuillez installer les bibliothèques requises :
+
+Le projet s'appuie sur `Stanza` pour la lemmatisation de pointe (qui filtre les noms propres et les erreurs OCR) et `requests` pour le téléchargement.
 
 ```bash
 pip install requests stanza
 ```
 
-### 2. Téléchargement des Textes
-Exécutez les scripts de téléchargement pour récupérer les œuvres depuis Perseus et d'autres sources (fichiers XML TEI et SBLGNT).
+### 2. Téléchargement des corpus
+
+Il suffit d'exécuter les scripts depuis la racine du projet pour rapatrier les œuvres au format XML :
 
 ```bash
-# Téléchargement des textes principaux (Iliade, Odyssée, République, etc.)
-python3 download_texts.py
-
-# Téléchargement du corpus étendu (Hérodote, Démosthène, Nouveau Testament complet)
-python3 download_more.py
+python3 scripts/data_collection/download_texts.py
+python3 scripts/data_collection/download_more.py
+python3 scripts/data_collection/download_attic_orators.py
 ```
+Le dossier `data/` sera alors rempli.
 
-Ces scripts créeront un dossier `data/` et y placeront les fichiers nécessaires.
+### 3. Exécution de l'analyse fréquentielle
 
-### 3. Lancer l'Analyse
-Une fois les textes téléchargés, lancez le script d'analyse. Il se chargera de :
-1.  Télécharger le modèle de lemmatisation pour le grec ancien (`stanza`).
-2.  Lemmatiser l'ensemble des textes.
-3.  Calculer les fréquences et les seuils de couverture (98%).
-4.  Générer le rapport (`frequency_report.md`) et la liste de fréquence globale (`perseus_frequency.csv`).
+Ce script lemmatise le corpus complet (ce qui peut prendre plusieurs dizaines de minutes), calcule l'indice d'apprenabilité pour toutes les œuvres et exporte les listes : 
 
 ```bash
-python3 analyze_frequency.py
+python3 scripts/analyze_frequency.py
 ```
 
-Le processus peut prendre quelques minutes en fonction de la puissance de votre machine (le téléchargement des modèles et la lemmatisation sont intensifs).
+### 4. Calcul des rangs
 
-## 📂 Fichiers Générés
-*   `frequency_report.md` : Le rapport détaillé (Markdown).
-*   `perseus_frequency.csv` : La liste de fréquence de tout le corpus.
-*   `perseus_frequency_top5k.csv` : Les 5 000 mots les plus fréquents (Recommandé pour débuter).
-*   `table_visualization.html` & `frequency_table_simple.png` : Visualisation des données.
+Pour déterminer à quel moment de l'apprentissage (en nombre de mots) une œuvre devient accessible (95% de couverture) et fluide (98%), lancez :
+
+```bash
+python3 scripts/calculate_perseus_ranks.py
+```
+
+---
+
+## Résultats et visualisation
+
+Le résultat de cette pondération bouleverse les méthodes traditionnelles d'apprentissage fondées sur Perseus. On observe que le dialecte ionien d'Homère cède le sommet de la liste au profit du vocabulaire judiciaire attique et de la narration de la Koinè, beaucoup plus rentables pour un étudiant débutant. 
+
+Tous les résultats de classement sont observables de manière syntaxique ou compilée dans le dossier `visuals/`.
+
+### Crédits
+*Code et recherche originaux par [Luc Pommeret](https://lucpommeret.com) et [Thibault Wagret](https://thibaultwagret.fr).*

@@ -223,51 +223,49 @@ def main():
             "ratio": needed / len(counts) if len(counts) > 0 else 0
         })
 
-    # --- NEW: Weighted Corpus Generation ---
-    print("\n--- Generating Weighted Corpus based on Learnability Index (Core/Total) ---")
-    weighted_corpus = {} # Use dict for float values
+    # --- NEW: Statistically Sound Weighted Corpus Generation ---
+    print("\n--- Generating Statistically Sound Weighted Corpus ---")
+    weighted_corpus = {}
     
-    # Sort texts by Index (Ratio) - "Ordonner les textes"
-    # ratio = needed_98 / total_tokens (Wait, needed / unique? No, needed / total?)
-    # User said: "indice d'apprenabilité (noyau/mots totaux)"
-    # My previous code calculated ratio = needed / unique_lemmas. 
-    # I should correct this to needed / total_tokens if that's what the user explicitly asked.
-    # User: "noyau/mots totaux". 
-    # My code line 208: "ratio": needed / len(counts) -> needed / unique.
-    # I MUST FIX THIS to needed / total_tokens for the User's Index.
-    
-    # Re-calculating proper user index
+    # The new Apprenability Index: 10000 / needed_98
     for r in results:
-        r["learnability_index"] = r["needed_98"] / r["total_tokens"] if r["total_tokens"] > 0 else 0
+        needed_98 = r["needed_98"]
+        # Score that advantages texts with a SMALL core (few words needed for 98%)
+        r["learnability_index"] = 10000.0 / needed_98 if needed_98 > 0 else 0
         
-    # Sort by this new index
-    results.sort(key=lambda x: x["learnability_index"])
+    # Sort by this new index (higher is better/easier)
+    results.sort(key=lambda x: x["learnability_index"], reverse=True)
     
-    print(f"{'Work':<30} | {'Index (Core/Total)':<20} | {'Weight Multiplier'}")
+    print(f"{'Work':<30} | {'Noyau (98%)':<12} | {'Index (10k/Noyau)'}")
     print("-" * 70)
     
     for r in results: 
         name = r["name"]
+        needed_98 = r["needed_98"]
         index = r["learnability_index"]
+        total_tokens = r["total_tokens"]
         counts = work_stats[name]
         
-        print(f"{name:<30} | {index:.6f}             | x{index:.6f}")
+        print(f"{name:<30} | {needed_98:<12} | {index:.2f}")
         
         for lemma, count in counts.items():
             if lemma not in weighted_corpus:
                 weighted_corpus[lemma] = 0.0
-            weighted_corpus[lemma] += count * index
+            
+            # Use relative frequency * index
+            relative_freq = count / total_tokens if total_tokens > 0 else 0
+            weighted_corpus[lemma] += relative_freq * index
 
     # Export Weighted List
     print("Exporting Weighted Frequency List (perseus_weighted.csv)...")
     with open("perseus_weighted.csv", "w") as f:
-        f.write("Rank,Lemma,WeightedCount,RawCount\n") 
+        f.write("Rank,Lemma,WeightedScore,RawCount\n") 
         # We need to sort by WeightedCount
         sorted_weighted = sorted(weighted_corpus.items(), key=lambda item: item[1], reverse=True)
         
-        for rank, (lemma, w_count) in enumerate(sorted_weighted, 1):
+        for rank, (lemma, w_score) in enumerate(sorted_weighted, 1):
             raw_count = corpus_lemmas[lemma]
-            f.write(f"{rank},{lemma},{w_count:.4f},{raw_count}\n")
+            f.write(f"{rank},{lemma},{w_score:.6f},{raw_count}\n")
             
     # --- END NEW ---
 
@@ -292,9 +290,9 @@ def main():
         
     # Write Report
     with open(OUTPUT_FILE, "w") as f:
-        f.write("# Frequency Analysis Report\n\n")
-        f.write("## 98% Coverage Requirements\n")
-        f.write("| Work | Total Tokens | Unique Lemmas | Lemmas for 98% Coverage | % of Vocabulary |\n")
+        f.write("# Rapport d'analyse fréquentielle\n\n")
+        f.write("## Couverture à 98 %\n")
+        f.write("| Œuvre | Mots totaux | Lemmes uniques | Lemmes pour 98 % | % du vocabulaire |\n")
         f.write("|---|---|---|---|---|\n")
         
         # Sort by needed_98 ascending
@@ -303,9 +301,9 @@ def main():
         for r in results:
             f.write(f"| {r['name']} | {r['total_tokens']:,} | {r['unique_lemmas']:,} | {r['needed_98']:,} | {r['ratio']*100:.1f}% |\n")
             
-        f.write("\n## Comparison with Generated 'Perseus' (Corpus) List\n")
-        f.write("Intersection of Top N words. Determining how standard the vocabulary is.\n\n")
-        f.write("| Work | Top 100 Overlap | Top 500 Overlap | Top 1000 Overlap |\n")
+        f.write("\n## Comparaison avec la liste Perseus (corpus)\n")
+        f.write("Intersection des N mots les plus fréquents pour déterminer la standardisation du vocabulaire.\n\n")
+        f.write("| Œuvre | Top 100 | Top 500 | Top 1000 |\n")
         f.write("|---|---|---|---|\n")
         
         comparison_results.sort(key=lambda x: x["overlap_1000"], reverse=True)
