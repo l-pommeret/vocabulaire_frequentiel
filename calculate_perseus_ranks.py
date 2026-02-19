@@ -76,7 +76,8 @@ def main():
     
     print(f"Loaded {len(corpus_freq)} lemmas from corpus.")
 
-    nlp = stanza.Pipeline('grc', processors='tokenize,lemma', verbose=False)
+    # Initialize with POS for filtering
+    nlp = stanza.Pipeline('grc', processors='tokenize,pos,lemma', verbose=False)
     
     results = {}
 
@@ -92,22 +93,29 @@ def main():
             
         try:
             text = parse_xml_tei(filepath)
-            # Lemmatize (simplified, no chunking check since we're doing specific works)
-            # Actually for big works we need chunking or it will crash/slow
-            chunk_size = 50000
             lemmas = []
+            
+            # Helper function for consistent filtering
+            def process_chunk_text(chunk_text):
+                chunk_lemmas = []
+                doc = nlp(chunk_text)
+                for sent in doc.sentences:
+                    for word in sent.words:
+                        # Exact same filters as analyze_frequency.py
+                        if word.upos in ["PROPN", "PUNCT"]:
+                            continue
+                        if not all('\u0370' <= c <= '\u03FF' or c in ["'", "-"] for c in word.lemma):
+                            continue
+                        chunk_lemmas.append(word.lemma)
+                return chunk_lemmas
+
+            chunk_size = 50000
             if len(text) > chunk_size:
                  chunks = [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
                  for chunk in chunks:
-                     doc = nlp(chunk)
-                     for sent in doc.sentences:
-                        for word in sent.words:
-                            lemmas.append(word.lemma)
+                     lemmas.extend(process_chunk_text(chunk))
             else:
-                doc = nlp(text)
-                for sent in doc.sentences:
-                    for word in sent.words:
-                        lemmas.append(word.lemma)
+                lemmas.extend(process_chunk_text(text))
             
             # DEBUG: Check overlap
             corpus_set = set(corpus_freq)

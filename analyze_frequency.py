@@ -101,17 +101,31 @@ def lemmatize_text(text, lemmatizer):
 def lemmatize_text(text, nlp):
     """
     Lemmatizes Greek text using Stanza.
+    Filters out Proper Nouns (PROPN) and non-Greek characters.
     """
     try:
         doc = nlp(text)
         lemmas = []
         for sent in doc.sentences:
             for word in sent.words:
+                # Filter 1: Proper Nouns
+                if word.upos == "PROPN":
+                    continue
+                
+                # Filter 2: Non-Greek characters (e.g. Latin noise, numbers)
+                # Keep only if ALL chars are Greek (or hyphen/apostrophe if needed, but strictly Greek is safer for frequency)
+                if not all('\u0370' <= c <= '\u03FF' or c in ["'", "-"] for c in word.lemma):
+                    continue
+                    
+                # Filter 3: Punctuation (usually handled by POS, but extra safety)
+                if word.upos == "PUNCT":
+                    continue
+
                 lemmas.append(word.lemma)
         return lemmas
     except Exception as e:
         print(f"Error lemmatizing: {e}")
-        return re.findall(r'\w+', text.lower())
+        return []
 
 def calculate_coverage(lemma_counts, threshold=0.98):
     total_words = sum(lemma_counts.values())
@@ -135,7 +149,8 @@ def main():
     try:
         # Check if dir exists or just try download
         stanza.download('grc', verbose=False) 
-        nlp = stanza.Pipeline('grc', processors='tokenize,lemma', verbose=False)
+        # Added 'pos' to processors
+        nlp = stanza.Pipeline('grc', processors='tokenize,pos,lemma', verbose=False)
     except Exception as e:
         print(f"Error initializing Stanza: {e}")
         return

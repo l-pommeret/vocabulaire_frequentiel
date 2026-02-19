@@ -3,329 +3,329 @@
 ## 98% Coverage Requirements
 | Work | Total Tokens | Unique Lemmas | Lemmas for 98% Coverage | % of Vocabulary |
 |---|---|---|---|---|
-| Lysias 05 | 326 | 157 | 151 | 96.2% |
-| Lysias 33 | 537 | 224 | 214 | 95.5% |
-| Lysias 17 | 696 | 251 | 238 | 94.8% |
-| Lysias 34 | 650 | 265 | 252 | 95.1% |
-| Lysias 15 | 732 | 270 | 256 | 94.8% |
-| Lysias 11 | 712 | 276 | 262 | 94.9% |
-| Lysias 29 | 776 | 282 | 267 | 94.7% |
-| Lysias 23 | 923 | 289 | 271 | 93.8% |
-| Lysias 27 | 901 | 314 | 296 | 94.3% |
-| Demosthenes 31 | 1,099 | 342 | 321 | 93.9% |
-| Lysias 28 | 1,059 | 363 | 342 | 94.2% |
-| Lysias 04 | 1,132 | 376 | 354 | 94.1% |
-| Isaeus 12 | 1,223 | 396 | 372 | 93.9% |
-| Isocrates 01 | 1,305 | 414 | 388 | 93.7% |
-| Isocrates 03 | 1,249 | 414 | 390 | 94.2% |
-| Lysias 09 | 1,091 | 412 | 391 | 94.9% |
-| Lysias 08 | 1,371 | 439 | 412 | 93.8% |
-| Lysias 22 | 1,373 | 440 | 413 | 93.9% |
-| Lysias 16 | 1,378 | 467 | 440 | 94.2% |
-| Isocrates 08 | 1,478 | 480 | 451 | 94.0% |
-| Demosthenes 46 | 2,129 | 495 | 453 | 91.5% |
-| Hyperides 02 | 1,313 | 486 | 460 | 94.7% |
-| Demosthenes 51 | 1,546 | 496 | 466 | 94.0% |
-| Lysias 24 | 1,749 | 508 | 474 | 93.3% |
-| Lysias 21 | 1,548 | 504 | 474 | 94.0% |
-| Lysias 18 | 1,611 | 509 | 477 | 93.7% |
-| Demosthenes 11 | 1,455 | 507 | 478 | 94.3% |
-| Lysias 26 | 1,702 | 525 | 491 | 93.5% |
-| Demosthenes 05 | 1,667 | 528 | 495 | 93.8% |
-| Isaeus 10 | 2,452 | 553 | 504 | 91.1% |
-| Demosthenes 12 | 1,589 | 537 | 506 | 94.2% |
-| Lysias 10 | 1,868 | 546 | 509 | 93.2% |
-| Demosthenes 28 | 1,756 | 551 | 516 | 93.6% |
-| Demosthenes 16 | 2,140 | 568 | 526 | 92.6% |
-| Demosthenes 38 | 2,134 | 576 | 534 | 92.7% |
-| Demosthenes 52 | 2,439 | 583 | 535 | 91.8% |
-| Demosthenes 41 | 2,287 | 580 | 535 | 92.2% |
-| Antiphon 01 | 2,221 | 592 | 548 | 92.6% |
-| Lysias 25 | 2,450 | 604 | 555 | 91.9% |
-| Lysias 20 | 2,351 | 603 | 556 | 92.2% |
-| Isaeus 04 | 2,163 | 600 | 557 | 92.8% |
-| Lysias 31 | 2,199 | 609 | 566 | 92.9% |
-| Demosthenes 26 | 1,893 | 603 | 566 | 93.9% |
-| Lysias 32 | 2,061 | 610 | 569 | 93.3% |
-| Antiphon 04 | 2,487 | 627 | 578 | 92.2% |
-| Hyperides 01 | 2,166 | 621 | 578 | 93.1% |
-| Demosthenes 55 | 2,446 | 628 | 580 | 92.4% |
-| Demosthenes 17 | 2,030 | 627 | 587 | 93.6% |
-| Demosthenes 30 | 2,700 | 653 | 599 | 91.7% |
-| Demosthenes 32 | 2,228 | 643 | 599 | 93.2% |
-| Demosthenes 01 | 2,125 | 643 | 601 | 93.5% |
-| Lysias 30 | 2,273 | 651 | 606 | 93.1% |
-| Demosthenes 53 | 2,316 | 658 | 612 | 93.0% |
-| Andocides 02 | 2,400 | 662 | 614 | 92.7% |
-| Demosthenes 15 | 2,520 | 666 | 616 | 92.5% |
-| Demosthenes 02 | 2,361 | 675 | 628 | 93.0% |
-| Demosthenes 42 | 2,590 | 682 | 631 | 92.5% |
-| Demosthenes 06 | 2,314 | 685 | 639 | 93.3% |
-| Lysias 07 | 2,543 | 691 | 641 | 92.8% |
-| Isaeus 09 | 2,771 | 697 | 642 | 92.1% |
-| Lysias 03 | 2,563 | 693 | 642 | 92.6% |
-| Demosthenes 07 | 2,819 | 702 | 646 | 92.0% |
-| Demosthenes 33 | 2,912 | 713 | 655 | 91.9% |
-| Demosthenes 13 | 2,669 | 709 | 656 | 92.5% |
-| Antiphon 03 | 2,806 | 715 | 659 | 92.2% |
-| Isaeus 01 | 3,291 | 729 | 664 | 91.1% |
-| Lysias 14 | 2,954 | 728 | 669 | 91.9% |
-| Lysias 01 | 2,867 | 728 | 671 | 92.2% |
-| Lysias 1 | 2,867 | 728 | 671 | 92.2% |
-| Demosthenes 48 | 4,047 | 761 | 681 | 89.5% |
-| Isaeus 02 | 3,326 | 763 | 697 | 91.3% |
-| Demosthenes 14 | 2,966 | 757 | 698 | 92.2% |
-| Demosthenes 03 | 2,739 | 754 | 700 | 92.8% |
-| Demosthenes 39 | 3,242 | 766 | 702 | 91.6% |
-| Hyperides 06 | 2,879 | 787 | 730 | 92.8% |
-| Demosthenes 56 | 3,779 | 811 | 736 | 90.8% |
-| Andocides 03 | 3,582 | 814 | 743 | 91.3% |
-| Isaeus 07 | 3,358 | 812 | 745 | 91.7% |
-| Isocrates 06 | 3,289 | 816 | 751 | 92.0% |
-| Hyperides 05 | 3,289 | 830 | 765 | 92.2% |
-| Hyperides 04 | 3,301 | 832 | 766 | 92.1% |
-| Demosthenes 44 | 4,806 | 865 | 769 | 88.9% |
-| Demosthenes 34 | 3,740 | 855 | 781 | 91.3% |
-| Demosthenes 60 | 2,856 | 846 | 789 | 93.3% |
-| Antiphon 02 | 3,132 | 853 | 791 | 92.7% |
-| Isocrates 04 | 3,263 | 873 | 808 | 92.6% |
-| Demosthenes 49 | 4,931 | 913 | 815 | 89.3% |
-| Isocrates 10 | 3,072 | 890 | 829 | 93.1% |
-| Isaeus 11 | 4,321 | 916 | 830 | 90.6% |
-| Demosthenes 40 | 4,478 | 920 | 831 | 90.3% |
-| Lysias 06 | 3,231 | 896 | 832 | 92.9% |
-| Isocrates 13 | 3,386 | 908 | 841 | 92.6% |
-| Demosthenes 29 | 4,463 | 931 | 842 | 90.4% |
-| Isocrates 05 | 3,929 | 922 | 844 | 91.5% |
-| Demosthenes 35 | 4,186 | 931 | 848 | 91.1% |
-| Isocrates 12 | 3,575 | 921 | 850 | 92.3% |
-| Isocrates 07 | 3,323 | 916 | 850 | 92.8% |
-| Demosthenes 36 | 4,615 | 955 | 863 | 90.4% |
-| Hyperides 03 | 3,397 | 930 | 863 | 92.8% |
-| Demosthenes 04 | 3,830 | 940 | 864 | 91.9% |
-| Lysias 19 | 3,952 | 952 | 873 | 91.7% |
-| Isaeus 08 | 3,882 | 957 | 880 | 92.0% |
-| Isaeus 05 | 3,842 | 962 | 886 | 92.1% |
-| Antiphon 06 | 4,633 | 985 | 893 | 90.7% |
-| Demosthenes 43 | 7,218 | 1,042 | 898 | 86.2% |
-| Isaeus 03 | 5,288 | 1,005 | 900 | 89.6% |
-| Demosthenes 54 | 3,668 | 975 | 902 | 92.5% |
-| Isocrates 14 | 4,227 | 990 | 906 | 91.5% |
-| Demosthenes 27 | 5,238 | 1,014 | 910 | 89.7% |
-| Demosthenes 37 | 4,420 | 998 | 910 | 91.2% |
-| Lysias 02 | 4,622 | 1,014 | 922 | 90.9% |
-| Isocrates 02 | 4,120 | 1,035 | 953 | 92.1% |
-| Andocides 04 | 3,668 | 1,044 | 971 | 93.0% |
-| Demosthenes 57 | 5,354 | 1,085 | 978 | 90.1% |
-| Isaeus 06 | 4,427 | 1,067 | 979 | 91.8% |
-| Demosthenes 08 | 4,877 | 1,083 | 986 | 91.0% |
-| Demosthenes 50 | 5,242 | 1,098 | 994 | 90.5% |
-| Demosthenes 61 | 4,089 | 1,076 | 995 | 92.5% |
-| Demosthenes 47 | 6,179 | 1,142 | 1,019 | 89.2% |
-| Demosthenes 58 | 5,386 | 1,136 | 1,029 | 90.6% |
-| Demosthenes 10 | 5,107 | 1,144 | 1,042 | 91.1% |
-| Isocrates 09 | 4,146 | 1,124 | 1,042 | 92.7% |
-| Demosthenes 09 | 4,954 | 1,172 | 1,073 | 91.6% |
-| Isocrates 15 | 5,164 | 1,188 | 1,085 | 91.3% |
-| Lysias 13 | 6,127 | 1,223 | 1,101 | 90.0% |
-| Isocrates 18 | 5,100 | 1,260 | 1,158 | 91.9% |
-| Demosthenes 45 | 6,636 | 1,291 | 1,159 | 89.8% |
-| Lysias 12 | 5,928 | 1,289 | 1,171 | 90.8% |
-| Demosthenes 22 | 6,500 | 1,386 | 1,256 | 90.6% |
-| Antiphon 05 | 8,616 | 1,455 | 1,283 | 88.2% |
-| New Testament Revelation | 11,081 | 1,512 | 1,291 | 85.4% |
-| Isocrates 16 | 6,848 | 1,489 | 1,353 | 90.9% |
-| Demosthenes 25 | 7,783 | 1,651 | 1,496 | 90.6% |
-| Isocrates 17 | 8,871 | 1,830 | 1,653 | 90.3% |
-| Isocrates 20 | 9,744 | 1,869 | 1,675 | 89.6% |
-| Demosthenes 20 | 13,093 | 2,001 | 1,740 | 87.0% |
-| Demosthenes 59 | 10,401 | 2,002 | 1,794 | 89.6% |
-| Isocrates 11 | 12,005 | 2,242 | 2,002 | 89.3% |
-| Isocrates Panegyricus | 12,005 | 2,242 | 2,002 | 89.3% |
-| Andocides 01 | 13,030 | 2,284 | 2,024 | 88.6% |
-| Antigone | 8,978 | 2,267 | 2,088 | 92.1% |
-| Demosthenes 24 | 16,837 | 2,589 | 2,253 | 87.0% |
-| Demosthenes 23 | 17,830 | 2,614 | 2,258 | 86.4% |
-| Lycurgus 01 | 14,692 | 2,745 | 2,452 | 89.3% |
-| Isocrates 21 | 17,536 | 2,840 | 2,490 | 87.7% |
-| Aeschines 02 | 15,696 | 2,895 | 2,582 | 89.2% |
-| Isocrates 19 | 19,599 | 3,021 | 2,630 | 87.1% |
-| Demosthenes 21 | 18,219 | 3,010 | 2,646 | 87.9% |
-| Aeschines 01 | 17,052 | 3,152 | 2,811 | 89.2% |
+| Lysias 05 | 120 | 57 | 55 | 96.5% |
+| Lysias 33 | 208 | 98 | 94 | 95.9% |
+| Lysias 17 | 246 | 102 | 98 | 96.1% |
+| Lysias 23 | 313 | 105 | 99 | 94.3% |
+| Lysias 11 | 238 | 106 | 102 | 96.2% |
+| Lysias 34 | 231 | 106 | 102 | 96.2% |
+| Lysias 15 | 276 | 110 | 105 | 95.5% |
+| Lysias 27 | 304 | 112 | 106 | 94.6% |
+| Demosthenes 31 | 373 | 121 | 114 | 94.2% |
+| Lysias 29 | 266 | 124 | 119 | 96.0% |
+| Lysias 28 | 378 | 141 | 134 | 95.0% |
+| Isaeus 12 | 352 | 141 | 134 | 95.0% |
+| Isocrates 01 | 441 | 149 | 141 | 94.6% |
+| Lysias 04 | 379 | 149 | 142 | 95.3% |
+| Lysias 08 | 512 | 157 | 147 | 93.6% |
+| Lysias 09 | 434 | 166 | 158 | 95.2% |
+| Lysias 22 | 496 | 180 | 171 | 95.0% |
+| Isocrates 03 | 492 | 182 | 173 | 95.1% |
+| Lysias 20 | 774 | 196 | 181 | 92.3% |
+| Hyperides 02 | 423 | 190 | 182 | 95.8% |
+| Isaeus 10 | 780 | 198 | 183 | 92.4% |
+| Demosthenes 46 | 835 | 206 | 190 | 92.2% |
+| Antiphon 04 | 826 | 206 | 190 | 92.2% |
+| Lysias 16 | 516 | 200 | 190 | 95.0% |
+| Lysias 24 | 613 | 204 | 192 | 94.1% |
+| Demosthenes 16 | 829 | 211 | 195 | 92.4% |
+| Antiphon 01 | 773 | 211 | 196 | 92.9% |
+| Lysias 18 | 592 | 207 | 196 | 94.7% |
+| Lysias 10 | 638 | 212 | 200 | 94.3% |
+| Demosthenes 51 | 631 | 212 | 200 | 94.3% |
+| Demosthenes 28 | 613 | 212 | 200 | 94.3% |
+| Lysias 26 | 591 | 211 | 200 | 94.8% |
+| Demosthenes 38 | 802 | 218 | 202 | 92.7% |
+| Hyperides 01 | 582 | 215 | 204 | 94.9% |
+| Isaeus 04 | 786 | 223 | 208 | 93.3% |
+| Lysias 25 | 903 | 227 | 209 | 92.1% |
+| Isocrates 08 | 578 | 220 | 209 | 95.0% |
+| Lysias 21 | 574 | 222 | 211 | 95.0% |
+| Demosthenes 41 | 864 | 229 | 212 | 92.6% |
+| Demosthenes 30 | 961 | 235 | 216 | 91.9% |
+| Lysias 31 | 790 | 231 | 216 | 93.5% |
+| Demosthenes 52 | 938 | 237 | 219 | 92.4% |
+| Demosthenes 05 | 639 | 233 | 221 | 94.8% |
+| Andocides 02 | 824 | 241 | 225 | 93.4% |
+| Lysias 32 | 739 | 241 | 227 | 94.2% |
+| Isaeus 01 | 1,132 | 252 | 230 | 91.3% |
+| Isaeus 09 | 921 | 249 | 231 | 92.8% |
+| Lysias 30 | 885 | 248 | 231 | 93.1% |
+| Antiphon 03 | 873 | 248 | 231 | 93.1% |
+| Demosthenes 12 | 630 | 250 | 238 | 95.2% |
+| Demosthenes 11 | 594 | 249 | 238 | 95.6% |
+| Demosthenes 55 | 862 | 256 | 239 | 93.4% |
+| Demosthenes 01 | 785 | 255 | 240 | 94.1% |
+| Demosthenes 48 | 1,374 | 268 | 241 | 89.9% |
+| Demosthenes 33 | 1,004 | 263 | 243 | 92.4% |
+| Lysias 07 | 891 | 260 | 243 | 93.5% |
+| Demosthenes 53 | 763 | 260 | 245 | 94.2% |
+| Demosthenes 26 | 754 | 260 | 245 | 94.2% |
+| Demosthenes 32 | 743 | 262 | 248 | 94.7% |
+| Demosthenes 17 | 746 | 268 | 254 | 94.8% |
+| Isaeus 02 | 1,123 | 277 | 255 | 92.1% |
+| Demosthenes 15 | 943 | 274 | 256 | 93.4% |
+| Lysias 14 | 1,132 | 280 | 258 | 92.1% |
+| Demosthenes 42 | 911 | 277 | 259 | 93.5% |
+| Demosthenes 07 | 1,026 | 281 | 261 | 92.9% |
+| Lysias 01 | 955 | 280 | 261 | 93.2% |
+| Lysias 1 | 955 | 280 | 261 | 93.2% |
+| Antiphon 02 | 979 | 281 | 262 | 93.2% |
+| Lysias 03 | 969 | 283 | 264 | 93.3% |
+| Demosthenes 06 | 881 | 283 | 266 | 94.0% |
+| Demosthenes 44 | 1,615 | 308 | 276 | 89.6% |
+| Isaeus 03 | 1,617 | 309 | 277 | 89.6% |
+| Demosthenes 39 | 1,168 | 301 | 278 | 92.4% |
+| Andocides 03 | 1,261 | 305 | 280 | 91.8% |
+| Isaeus 07 | 1,165 | 307 | 284 | 92.5% |
+| Demosthenes 13 | 1,017 | 304 | 284 | 93.4% |
+| Demosthenes 14 | 1,121 | 307 | 285 | 92.8% |
+| Demosthenes 02 | 895 | 302 | 285 | 94.4% |
+| Hyperides 06 | 937 | 304 | 286 | 94.1% |
+| Antiphon 06 | 1,463 | 317 | 288 | 90.9% |
+| Isaeus 11 | 1,439 | 318 | 290 | 91.2% |
+| Demosthenes 03 | 1,006 | 310 | 290 | 93.5% |
+| Isocrates 06 | 1,272 | 320 | 295 | 92.2% |
+| Demosthenes 56 | 1,235 | 319 | 295 | 92.5% |
+| Demosthenes 49 | 1,757 | 331 | 296 | 89.4% |
+| Isocrates 05 | 1,476 | 330 | 301 | 91.2% |
+| Hyperides 04 | 1,088 | 322 | 301 | 93.5% |
+| Lysias 06 | 1,140 | 324 | 302 | 93.2% |
+| Hyperides 05 | 902 | 324 | 306 | 94.4% |
+| Demosthenes 34 | 1,320 | 334 | 308 | 92.2% |
+| Demosthenes 36 | 1,634 | 346 | 314 | 90.8% |
+| Demosthenes 60 | 978 | 336 | 317 | 94.3% |
+| Isaeus 05 | 1,364 | 356 | 329 | 92.4% |
+| Demosthenes 29 | 1,609 | 362 | 330 | 91.2% |
+| Demosthenes 40 | 1,643 | 363 | 331 | 91.2% |
+| Isocrates 10 | 1,149 | 360 | 338 | 93.9% |
+| Demosthenes 37 | 1,609 | 374 | 342 | 91.4% |
+| Hyperides 03 | 1,093 | 365 | 344 | 94.2% |
+| Isocrates 04 | 1,329 | 372 | 346 | 93.0% |
+| Isaeus 08 | 1,371 | 374 | 347 | 92.8% |
+| Lysias 19 | 1,453 | 377 | 348 | 92.3% |
+| Demosthenes 27 | 1,864 | 386 | 349 | 90.4% |
+| Isocrates 12 | 1,408 | 378 | 350 | 92.6% |
+| Demosthenes 43 | 2,363 | 400 | 353 | 88.2% |
+| Isocrates 02 | 1,601 | 388 | 356 | 91.8% |
+| Isaeus 06 | 1,500 | 387 | 357 | 92.2% |
+| Demosthenes 04 | 1,425 | 388 | 360 | 92.8% |
+| Demosthenes 35 | 1,403 | 388 | 360 | 92.8% |
+| Demosthenes 08 | 1,838 | 397 | 361 | 90.9% |
+| Lysias 02 | 1,762 | 396 | 361 | 91.2% |
+| Demosthenes 54 | 1,372 | 390 | 363 | 93.1% |
+| Demosthenes 47 | 2,243 | 417 | 373 | 89.4% |
+| Andocides 04 | 1,295 | 400 | 375 | 93.8% |
+| Antiphon 05 | 2,633 | 430 | 378 | 87.9% |
+| Isocrates 13 | 1,372 | 409 | 382 | 93.4% |
+| Isocrates 14 | 1,669 | 416 | 383 | 92.1% |
+| Lysias 13 | 2,109 | 428 | 386 | 90.2% |
+| Isocrates 07 | 1,358 | 415 | 388 | 93.5% |
+| Demosthenes 57 | 1,983 | 428 | 389 | 90.9% |
+| Demosthenes 61 | 1,643 | 423 | 391 | 92.4% |
+| Lysias 12 | 2,204 | 444 | 400 | 90.1% |
+| Demosthenes 58 | 2,031 | 445 | 405 | 91.0% |
+| Demosthenes 50 | 1,965 | 449 | 410 | 91.3% |
+| Demosthenes 10 | 1,855 | 454 | 417 | 91.9% |
+| Demosthenes 45 | 2,391 | 485 | 438 | 90.3% |
+| Demosthenes 22 | 2,281 | 490 | 445 | 90.8% |
+| Isocrates 09 | 1,653 | 485 | 452 | 93.2% |
+| Demosthenes 09 | 1,853 | 499 | 462 | 92.6% |
+| Isocrates 15 | 2,055 | 516 | 475 | 92.1% |
+| Isocrates 18 | 2,009 | 517 | 477 | 92.3% |
+| Isocrates 16 | 2,659 | 571 | 518 | 90.7% |
+| Demosthenes 25 | 2,829 | 650 | 594 | 91.4% |
+| Isocrates 17 | 3,465 | 686 | 617 | 89.9% |
+| Demosthenes 20 | 4,944 | 717 | 619 | 86.3% |
+| New Testament Revelation | 4,136 | 701 | 619 | 88.3% |
+| Isocrates 20 | 3,975 | 717 | 638 | 89.0% |
+| Andocides 01 | 4,354 | 771 | 684 | 88.7% |
+| Demosthenes 59 | 4,059 | 800 | 719 | 89.9% |
+| Demosthenes 24 | 6,199 | 879 | 756 | 86.0% |
+| Isocrates 11 | 4,670 | 854 | 761 | 89.1% |
+| Isocrates Panegyricus | 4,670 | 854 | 761 | 89.1% |
+| Demosthenes 23 | 6,663 | 915 | 782 | 85.5% |
+| Lycurgus 01 | 5,040 | 950 | 850 | 89.5% |
+| Isocrates 21 | 6,936 | 996 | 858 | 86.1% |
+| Isocrates 19 | 7,968 | 1,117 | 958 | 85.8% |
+| Demosthenes 21 | 6,674 | 1,095 | 962 | 87.9% |
+| Antigone | 3,702 | 1,043 | 969 | 92.9% |
+| Aeschines 01 | 6,073 | 1,145 | 1,024 | 89.4% |
+| Aeschines 02 | 6,064 | 1,161 | 1,040 | 89.6% |
+| Demosthenes 19 | 10,015 | 1,368 | 1,168 | 85.4% |
+| Aeschines 03 | 8,843 | 1,421 | 1,245 | 87.6% |
+| Demosthenes On Crown | 9,756 | 1,549 | 1,354 | 87.4% |
+| Demosthenes 18 | 9,756 | 1,549 | 1,354 | 87.4% |
+| Anabasis | 26,076 | 2,496 | 1,975 | 79.1% |
+| Odyssey | 40,198 | 3,267 | 2,464 | 75.4% |
+| Republic | 38,967 | 3,250 | 2,471 | 76.0% |
+| Iliad | 52,856 | 3,741 | 2,684 | 71.7% |
 | New Testament | 135,356 | 5,381 | 3,058 | 56.8% |
-| Aeschines 03 | 23,161 | 3,824 | 3,361 | 87.9% |
-| Demosthenes 19 | 26,750 | 3,973 | 3,438 | 86.5% |
-| Demosthenes On Crown | 25,698 | 4,090 | 3,577 | 87.5% |
-| Demosthenes 18 | 25,698 | 4,090 | 3,577 | 87.5% |
-| Anabasis | 64,769 | 7,320 | 6,025 | 82.3% |
-| Iliad | 127,378 | 9,709 | 7,162 | 73.8% |
-| Republic | 104,780 | 9,504 | 7,409 | 78.0% |
-| Odyssey | 102,308 | 10,018 | 7,972 | 79.6% |
-| Peloponnesian War | 167,244 | 15,009 | 11,665 | 77.7% |
-| Herodotus | 207,696 | 18,330 | 14,177 | 77.3% |
+| Peloponnesian War | 67,199 | 4,616 | 3,273 | 70.9% |
+| Herodotus | 80,986 | 6,421 | 4,802 | 74.8% |
 
 ## Comparison with Generated 'Perseus' (Corpus) List
 Intersection of Top N words. Determining how standard the vocabulary is.
 
 | Work | Top 100 Overlap | Top 500 Overlap | Top 1000 Overlap |
 |---|---|---|---|
-| Herodotus | 75 | 320 | 583 |
-| Peloponnesian War | 73 | 331 | 579 |
-| Anabasis | 72 | 322 | 560 |
-| Republic | 76 | 305 | 559 |
-| Demosthenes 19 | 78 | 312 | 549 |
-| Demosthenes On Crown | 77 | 316 | 540 |
-| Demosthenes 18 | 77 | 316 | 540 |
-| Aeschines 03 | 76 | 318 | 532 |
-| Demosthenes 23 | 79 | 300 | 515 |
-| Lycurgus 01 | 73 | 287 | 508 |
-| Aeschines 01 | 81 | 296 | 499 |
-| Demosthenes 21 | 82 | 290 | 499 |
-| Isocrates 19 | 75 | 286 | 483 |
-| Isocrates 21 | 75 | 281 | 483 |
-| Aeschines 02 | 72 | 302 | 483 |
-| Andocides 01 | 76 | 299 | 465 |
-| Isocrates 11 | 70 | 283 | 461 |
-| Isocrates Panegyricus | 70 | 283 | 461 |
-| Demosthenes 24 | 72 | 275 | 460 |
-| Odyssey | 59 | 239 | 458 |
-| Iliad | 56 | 235 | 455 |
-| Demosthenes 20 | 76 | 293 | 452 |
-| New Testament | 56 | 234 | 439 |
-| Isocrates 17 | 70 | 278 | 428 |
-| Demosthenes 25 | 80 | 270 | 423 |
-| Lysias 12 | 69 | 276 | 422 |
-| Demosthenes 59 | 70 | 267 | 417 |
-| Demosthenes 09 | 73 | 249 | 416 |
-| Isocrates 20 | 69 | 281 | 415 |
-| Isocrates 16 | 72 | 266 | 414 |
-| Demosthenes 08 | 71 | 243 | 413 |
-| Antiphon 05 | 66 | 259 | 410 |
-| Demosthenes 10 | 73 | 252 | 407 |
-| Antigone | 64 | 248 | 407 |
-| Demosthenes 22 | 78 | 260 | 400 |
-| Isocrates 18 | 74 | 250 | 396 |
-| Lysias 02 | 62 | 238 | 394 |
-| Demosthenes 04 | 67 | 237 | 393 |
-| Demosthenes 57 | 66 | 241 | 391 |
-| Isocrates 15 | 68 | 246 | 390 |
-| Demosthenes 45 | 71 | 242 | 388 |
-| Lysias 13 | 64 | 240 | 387 |
-| Demosthenes 58 | 74 | 238 | 386 |
-| Isocrates 02 | 68 | 238 | 386 |
-| Lysias 19 | 66 | 235 | 377 |
-| Isocrates 12 | 68 | 220 | 376 |
-| Isocrates 09 | 67 | 220 | 374 |
-| Isaeus 08 | 64 | 225 | 374 |
-| Andocides 04 | 70 | 230 | 373 |
-| Antiphon 06 | 61 | 225 | 372 |
-| Demosthenes 43 | 63 | 208 | 371 |
-| Isocrates 14 | 64 | 228 | 370 |
-| Isocrates 04 | 68 | 239 | 369 |
-| Demosthenes 36 | 66 | 227 | 366 |
-| Demosthenes 27 | 65 | 222 | 364 |
-| Demosthenes 60 | 66 | 217 | 363 |
-| Isaeus 06 | 67 | 227 | 361 |
-| Isocrates 06 | 69 | 239 | 359 |
-| Demosthenes 54 | 71 | 209 | 358 |
-| Demosthenes 50 | 65 | 225 | 358 |
-| Demosthenes 37 | 69 | 212 | 358 |
-| Isaeus 03 | 64 | 214 | 357 |
-| Isaeus 11 | 67 | 215 | 356 |
-| Isocrates 10 | 69 | 206 | 356 |
-| Demosthenes 29 | 69 | 221 | 354 |
-| Lysias 06 | 70 | 214 | 352 |
-| Isocrates 05 | 61 | 220 | 350 |
-| Demosthenes 49 | 60 | 210 | 349 |
-| Demosthenes 47 | 63 | 209 | 347 |
-| Andocides 03 | 59 | 220 | 344 |
-| Demosthenes 14 | 68 | 232 | 341 |
-| Demosthenes 44 | 64 | 208 | 340 |
-| Demosthenes 40 | 70 | 206 | 338 |
-| Isocrates 13 | 60 | 206 | 338 |
-| Hyperides 04 | 67 | 200 | 332 |
-| Demosthenes 03 | 69 | 227 | 331 |
-| Demosthenes 61 | 65 | 204 | 330 |
-| Demosthenes 35 | 64 | 198 | 329 |
-| Isaeus 05 | 61 | 216 | 328 |
-| Demosthenes 13 | 71 | 234 | 327 |
-| Demosthenes 34 | 67 | 194 | 326 |
-| Lysias 14 | 69 | 213 | 325 |
-| Demosthenes 06 | 71 | 220 | 325 |
-| Isaeus 02 | 66 | 215 | 325 |
-| Demosthenes 15 | 68 | 222 | 324 |
-| Isaeus 07 | 63 | 209 | 321 |
-| Demosthenes 39 | 68 | 214 | 318 |
-| Demosthenes 02 | 69 | 219 | 316 |
-| New Testament Revelation | 47 | 176 | 316 |
-| Isocrates 07 | 61 | 182 | 315 |
-| Demosthenes 48 | 68 | 214 | 312 |
-| Lysias 01 | 69 | 201 | 311 |
-| Lysias 1 | 69 | 201 | 311 |
-| Hyperides 03 | 65 | 200 | 309 |
-| Andocides 02 | 64 | 229 | 307 |
-| Isaeus 01 | 70 | 203 | 306 |
-| Demosthenes 01 | 66 | 214 | 305 |
-| Hyperides 06 | 59 | 200 | 302 |
-| Lysias 07 | 63 | 214 | 299 |
-| Hyperides 05 | 62 | 186 | 299 |
-| Demosthenes 56 | 66 | 189 | 296 |
-| Demosthenes 42 | 62 | 199 | 296 |
-| Demosthenes 07 | 73 | 206 | 295 |
-| Demosthenes 30 | 59 | 209 | 295 |
-| Antiphon 02 | 62 | 178 | 294 |
-| Lysias 03 | 67 | 198 | 290 |
-| Lysias 30 | 63 | 211 | 290 |
-| Lysias 31 | 64 | 201 | 290 |
-| Lysias 20 | 64 | 213 | 290 |
-| Demosthenes 17 | 65 | 202 | 288 |
-| Demosthenes 53 | 65 | 193 | 285 |
-| Isaeus 09 | 67 | 194 | 284 |
-| Lysias 32 | 59 | 196 | 283 |
-| Demosthenes 55 | 61 | 209 | 281 |
-| Demosthenes 41 | 62 | 207 | 279 |
-| Demosthenes 32 | 67 | 193 | 279 |
-| Lysias 25 | 61 | 199 | 276 |
-| Demosthenes 16 | 63 | 211 | 274 |
-| Demosthenes 05 | 69 | 219 | 274 |
-| Demosthenes 52 | 67 | 197 | 267 |
-| Demosthenes 33 | 65 | 181 | 266 |
-| Demosthenes 26 | 63 | 189 | 266 |
-| Isaeus 04 | 69 | 182 | 265 |
-| Lysias 18 | 62 | 213 | 265 |
-| Demosthenes 11 | 65 | 211 | 264 |
-| Lysias 24 | 64 | 207 | 260 |
-| Demosthenes 12 | 62 | 195 | 259 |
-| Lysias 10 | 65 | 187 | 258 |
-| Antiphon 01 | 55 | 194 | 258 |
-| Hyperides 01 | 58 | 176 | 257 |
-| Antiphon 03 | 59 | 174 | 254 |
-| Demosthenes 38 | 67 | 203 | 253 |
-| Lysias 16 | 57 | 197 | 253 |
-| Isaeus 10 | 61 | 205 | 250 |
-| Lysias 26 | 63 | 197 | 249 |
-| Lysias 21 | 60 | 202 | 248 |
-| Demosthenes 28 | 65 | 187 | 247 |
-| Demosthenes 51 | 64 | 188 | 234 |
-| Antiphon 04 | 50 | 163 | 233 |
-| Isocrates 08 | 60 | 193 | 231 |
-| Demosthenes 46 | 54 | 186 | 231 |
-| Hyperides 02 | 60 | 185 | 229 |
-| Isocrates 01 | 59 | 191 | 226 |
-| Isocrates 03 | 63 | 184 | 224 |
-| Lysias 22 | 59 | 176 | 221 |
-| Lysias 04 | 65 | 177 | 208 |
-| Lysias 28 | 57 | 181 | 204 |
-| Demosthenes 31 | 59 | 174 | 202 |
-| Lysias 08 | 58 | 163 | 202 |
-| Isaeus 12 | 57 | 158 | 194 |
-| Lysias 09 | 51 | 156 | 193 |
-| Lysias 27 | 55 | 144 | 172 |
-| Lysias 34 | 52 | 147 | 161 |
-| Lysias 29 | 54 | 133 | 157 |
-| Lysias 23 | 55 | 132 | 156 |
-| Lysias 11 | 51 | 135 | 154 |
-| Lysias 15 | 56 | 127 | 153 |
-| Lysias 33 | 43 | 118 | 146 |
-| Lysias 17 | 54 | 127 | 142 |
-| Lysias 05 | 51 | 102 | 114 |
+| Herodotus | 62 | 285 | 547 |
+| Peloponnesian War | 60 | 289 | 543 |
+| Republic | 61 | 271 | 530 |
+| Anabasis | 59 | 271 | 491 |
+| Aeschines 03 | 55 | 285 | 481 |
+| Demosthenes 19 | 64 | 276 | 477 |
+| Lycurgus 01 | 58 | 276 | 462 |
+| Isocrates 21 | 62 | 258 | 458 |
+| Demosthenes On Crown | 63 | 274 | 457 |
+| Demosthenes 18 | 63 | 274 | 457 |
+| Isocrates 19 | 58 | 258 | 453 |
+| Demosthenes 23 | 66 | 264 | 450 |
+| New Testament | 45 | 220 | 450 |
+| Aeschines 02 | 59 | 263 | 448 |
+| Demosthenes 21 | 63 | 250 | 437 |
+| Aeschines 01 | 62 | 244 | 436 |
+| Isocrates 11 | 56 | 246 | 423 |
+| Isocrates Panegyricus | 56 | 246 | 423 |
+| Demosthenes 24 | 61 | 227 | 416 |
+| Isocrates 17 | 57 | 243 | 403 |
+| Isocrates 20 | 61 | 238 | 393 |
+| Iliad | 44 | 194 | 392 |
+| Odyssey | 41 | 195 | 390 |
+| Andocides 01 | 61 | 229 | 386 |
+| Demosthenes 20 | 63 | 246 | 379 |
+| Demosthenes 59 | 63 | 216 | 378 |
+| Antigone | 49 | 202 | 347 |
+| Demosthenes 25 | 57 | 227 | 342 |
+| Isocrates 16 | 57 | 237 | 339 |
+| Isocrates 18 | 59 | 235 | 317 |
+| Isocrates 15 | 54 | 224 | 314 |
+| Lysias 12 | 59 | 236 | 298 |
+| Demosthenes 09 | 58 | 232 | 297 |
+| Isocrates 09 | 53 | 215 | 291 |
+| Demosthenes 22 | 58 | 223 | 290 |
+| Lysias 02 | 54 | 213 | 281 |
+| Demosthenes 58 | 55 | 220 | 280 |
+| Demosthenes 45 | 55 | 211 | 277 |
+| Isocrates 14 | 53 | 206 | 276 |
+| Demosthenes 10 | 56 | 221 | 274 |
+| Isocrates 04 | 52 | 201 | 267 |
+| Lysias 13 | 54 | 209 | 264 |
+| Antiphon 05 | 59 | 220 | 263 |
+| Demosthenes 04 | 53 | 204 | 262 |
+| Isocrates 02 | 54 | 206 | 262 |
+| Andocides 04 | 54 | 201 | 260 |
+| Demosthenes 08 | 53 | 210 | 257 |
+| New Testament Revelation | 32 | 158 | 253 |
+| Isocrates 12 | 50 | 197 | 252 |
+| Demosthenes 37 | 56 | 189 | 249 |
+| Isocrates 13 | 48 | 183 | 248 |
+| Demosthenes 57 | 52 | 190 | 246 |
+| Demosthenes 50 | 46 | 190 | 242 |
+| Lysias 19 | 50 | 197 | 239 |
+| Isocrates 10 | 54 | 179 | 235 |
+| Demosthenes 61 | 50 | 177 | 233 |
+| Demosthenes 47 | 49 | 184 | 233 |
+| Demosthenes 27 | 51 | 176 | 232 |
+| Isaeus 06 | 52 | 192 | 231 |
+| Demosthenes 43 | 50 | 178 | 227 |
+| Demosthenes 60 | 48 | 173 | 226 |
+| Isocrates 07 | 48 | 163 | 226 |
+| Isaeus 08 | 49 | 180 | 225 |
+| Demosthenes 40 | 56 | 171 | 220 |
+| Lysias 14 | 51 | 177 | 217 |
+| Demosthenes 36 | 51 | 180 | 217 |
+| Demosthenes 49 | 50 | 178 | 216 |
+| Demosthenes 54 | 54 | 176 | 216 |
+| Demosthenes 03 | 55 | 171 | 213 |
+| Hyperides 04 | 57 | 174 | 212 |
+| Demosthenes 02 | 51 | 173 | 211 |
+| Demosthenes 29 | 54 | 172 | 211 |
+| Antiphon 06 | 53 | 177 | 211 |
+| Isocrates 06 | 52 | 172 | 211 |
+| Demosthenes 35 | 45 | 169 | 209 |
+| Isocrates 05 | 55 | 171 | 208 |
+| Lysias 06 | 51 | 166 | 207 |
+| Demosthenes 14 | 53 | 171 | 207 |
+| Andocides 03 | 58 | 172 | 207 |
+| Isaeus 11 | 54 | 161 | 205 |
+| Demosthenes 13 | 49 | 171 | 204 |
+| Demosthenes 15 | 51 | 171 | 203 |
+| Demosthenes 34 | 45 | 157 | 198 |
+| Isaeus 07 | 52 | 163 | 197 |
+| Hyperides 03 | 50 | 159 | 196 |
+| Hyperides 06 | 42 | 153 | 195 |
+| Demosthenes 06 | 57 | 156 | 193 |
+| Demosthenes 48 | 50 | 153 | 190 |
+| Demosthenes 56 | 43 | 151 | 189 |
+| Demosthenes 53 | 50 | 158 | 188 |
+| Hyperides 05 | 46 | 153 | 188 |
+| Isaeus 03 | 46 | 165 | 187 |
+| Lysias 01 | 52 | 145 | 186 |
+| Lysias 1 | 52 | 145 | 186 |
+| Demosthenes 01 | 57 | 159 | 185 |
+| Demosthenes 39 | 55 | 156 | 185 |
+| Isaeus 05 | 56 | 158 | 185 |
+| Lysias 03 | 48 | 144 | 184 |
+| Demosthenes 07 | 52 | 150 | 184 |
+| Lysias 30 | 51 | 155 | 184 |
+| Isaeus 01 | 48 | 152 | 182 |
+| Demosthenes 26 | 44 | 149 | 182 |
+| Lysias 07 | 52 | 152 | 180 |
+| Isaeus 02 | 56 | 154 | 179 |
+| Demosthenes 44 | 45 | 149 | 177 |
+| Demosthenes 42 | 53 | 141 | 173 |
+| Demosthenes 12 | 44 | 145 | 172 |
+| Lysias 32 | 50 | 137 | 172 |
+| Lysias 31 | 47 | 145 | 172 |
+| Demosthenes 11 | 48 | 147 | 171 |
+| Andocides 02 | 51 | 148 | 171 |
+| Antiphon 02 | 43 | 138 | 170 |
+| Isaeus 09 | 51 | 145 | 170 |
+| Demosthenes 32 | 49 | 148 | 170 |
+| Demosthenes 33 | 46 | 133 | 169 |
+| Demosthenes 17 | 44 | 134 | 168 |
+| Lysias 25 | 49 | 143 | 167 |
+| Demosthenes 05 | 50 | 137 | 165 |
+| Demosthenes 55 | 43 | 137 | 165 |
+| Demosthenes 30 | 52 | 137 | 165 |
+| Lysias 26 | 51 | 135 | 164 |
+| Demosthenes 41 | 51 | 134 | 161 |
+| Demosthenes 52 | 47 | 130 | 160 |
+| Lysias 16 | 47 | 142 | 158 |
+| Demosthenes 28 | 47 | 130 | 156 |
+| Isocrates 08 | 42 | 127 | 155 |
+| Antiphon 01 | 44 | 133 | 154 |
+| Lysias 18 | 53 | 131 | 154 |
+| Lysias 24 | 46 | 134 | 153 |
+| Lysias 20 | 49 | 134 | 152 |
+| Demosthenes 51 | 49 | 126 | 151 |
+| Demosthenes 38 | 52 | 134 | 149 |
+| Antiphon 04 | 37 | 115 | 149 |
+| Demosthenes 16 | 50 | 126 | 148 |
+| Lysias 10 | 46 | 128 | 148 |
+| Lysias 21 | 36 | 124 | 148 |
+| Isocrates 03 | 52 | 126 | 148 |
+| Antiphon 03 | 42 | 115 | 146 |
+| Isaeus 04 | 43 | 126 | 144 |
+| Demosthenes 46 | 44 | 117 | 142 |
+| Hyperides 02 | 41 | 118 | 140 |
+| Isaeus 10 | 45 | 119 | 138 |
+| Hyperides 01 | 48 | 119 | 135 |
+| Lysias 22 | 47 | 117 | 126 |
+| Lysias 09 | 44 | 101 | 123 |
+| Lysias 28 | 38 | 104 | 122 |
+| Isocrates 01 | 48 | 108 | 121 |
+| Lysias 08 | 45 | 94 | 114 |
+| Lysias 04 | 37 | 95 | 113 |
+| Lysias 29 | 40 | 81 | 95 |
+| Demosthenes 31 | 47 | 86 | 95 |
+| Isaeus 12 | 41 | 87 | 94 |
+| Lysias 27 | 44 | 86 | 94 |
+| Lysias 34 | 40 | 80 | 89 |
+| Lysias 15 | 46 | 76 | 86 |
+| Lysias 11 | 41 | 73 | 85 |
+| Lysias 23 | 45 | 75 | 78 |
+| Lysias 17 | 42 | 66 | 76 |
+| Lysias 33 | 36 | 66 | 74 |
+| Lysias 05 | 32 | 48 | 51 |
