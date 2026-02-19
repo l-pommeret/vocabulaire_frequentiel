@@ -6,13 +6,13 @@ L'objectif de ce projet est de proposer une progression lexicale réaliste aux �
 
 ## Approche : le score de facilité
 
-L'indice d'apprenabilité ($I_A$) d'une œuvre est calculé selon la taille de son noyau lexical. Le **Noyau Lexical** est défini comme le nombre de mots (lemmes) uniques qu'un lecteur doit connaître pour comprendre **98%** de l'œuvre.
+L'indice d'apprenabilité ($I_A$) d'une œuvre est calculé selon la taille de son noyau lexical. Le **Noyau Lexical** (noté $N_{98}$) est défini comme le nombre de mots (lemmes) uniques qu'un lecteur doit connaître pour comprendre **98 %** de l'œuvre.
 
 ![Tableau de Fréquence](visuals/frequency_table_simple.png)
 
 La formule mathématique du score de facilité intégrée au modèle est :
 
-$$I_A(T) = \frac{10000}{N_{98\%}(T)}$$
+$$I_A(T) = \frac{10000}{N_{98}(T)}$$
 
 Les mots sont ensuite pondérés par leur fréquence relative dans chaque texte multipliée par l'indice du texte, permettant ainsi de redonner de l'importance au vocabulaire des textes pédagogiquement accessibles (Ex: Les discours de Lysias ou le Nouveau Testament).
 
